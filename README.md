@@ -3,11 +3,12 @@
 <br/>
 
 A website presenting my projects.
+Needed something quick, will be redone from the ground up soon.
 
 <br/>
 
 <p align="center">
-	<img src="./resources/noa/Social.png" width="700">
+	<img src="./resources/noa/Social_rounded.png" width="700">
 </p>
 
 # 📍 Access
