@@ -3,7 +3,8 @@
 <br/>
 
 A website presenting my projects.
-Needed something quick, will be redone from the ground up soon.
+Needed something quick.
+Working on v2 right now, complete redesign in progress...
 
 <br/>
 

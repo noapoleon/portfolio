@@ -2,10 +2,10 @@
 	"projects":
 	[
 		{
-			"date": 2023,
+			"date": 2022,
 			"type": "School Project",
+			"description": "Sort data on a stack, with a limited set of instructions, using the lowest possible number of actions. Manipulate various types of algorithms and choose the most appropriate solution (out of many) for an optimized data sorting.",
 			"title": "Push Swap",
-			"description": "This project will make you sort data on a stack, with a limited set of instructions, using the lowest possible number of actions. To succeed you’ll have to manipulate various types of algorithms and choose the most appropriate solution (out of many) for an optimized data sorting.",
 			"tags":
 			[
 				{ "name": "C", "url": "https://en.wikipedia.org/wiki/C_(programming_language)" }
@@ -45,7 +45,7 @@
 			"date": 2023,
 			"type": "School Project",
 			"title": "Cub3D",
-			"description": "This project is inspired by the world-famous Wolfenstein 3D game, which was the first FPS ever. It will enable you to explore ray-casting. Your goal will be to make a dynamic view inside a maze, in which you’ll have to find your way.",
+			"description": "This project is inspired by the world-famous Wolfenstein 3D game, which was the first FPS ever. It uses ray-casting to create a dynamic view inside a maze, in which you’ll have to find your way.",
 			"tags":
 			[
 				{ "name": "C", "url": "https://en.wikipedia.org/wiki/C_(programming_language)" }
@@ -65,7 +65,7 @@
 			"date": 2023,
 			"type": "School Project",
 			"title": "Minishell",
-			"description": "This project is about creating a simple shell. Yes, your own little bash. You will learn a lot about processes and file descriptors.",
+			"description": "This project is about creating a simple shell. My own little bash. I learned a lot about processes, file descriptors, tokenization and more",
 			"tags":
 			[
 				{ "name": "C", "url": "https://en.wikipedia.org/wiki/C_(programming_language)" }
@@ -85,13 +85,15 @@
 			"date": 2024,
 			"title": "ft_transcendence",
 			"type": "School Project",
-			"description": "Thanks to your website, users will play Pong with others. You have to provide a nice user interface and real-time multiplayer online games!",
+			"description": "A fullstack real-time multiplayer Pong game website. Featuring a Django and MySQL backend, Bootstrap and Three.js for the front end, and Docker for containerization, logging, and monitoring.",
 			"tags":
 			[
 				{ "name": "Python", "url": "https://www.python.org/" },
 				{ "name": "Django", "url": "https://www.djangoproject.com/" },
 				{ "name": "Javascript", "url": "https://www.javascript.com/" },
-				{ "name": "ThreeJs", "url": "https://threejs.org/" }
+				{ "name": "ThreeJs", "url": "https://threejs.org/" },
+				{ "name": "Bootstrap", "url": "https://getbootstrap.com/" },
+				{ "name": "Docker", "url": "https://www.docker.com/" }
 			],
 			"links":
 			[

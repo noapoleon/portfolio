@@ -149,7 +149,7 @@ function projects_events()
 		let inverted = true;
 		let i = 0;
 
-		if (sort_by == 'Date')
+		if (sort_by == 'Default' || sort_by == 'Date')
 		{
 			data.projects.sort((a, b) =>
 			{

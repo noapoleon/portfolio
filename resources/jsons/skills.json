@@ -91,6 +91,11 @@
 					"name": "Git",
 					"logo": "resources/svgs/skills/Git.svg",
 					"link": "https://git-scm.com/"
+				},
+				{
+					"name": "Docker",
+					"logo": "resources/svgs/skills/Docker.svg",
+					"link": "https://git-scm.com/"
 				}
 			]
 		},
