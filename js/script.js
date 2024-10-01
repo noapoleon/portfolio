@@ -20,13 +20,19 @@ window.onload = () =>
 	in_animations();
 	videos_events();
 
-	if (!is_safari())
-		document.querySelector('#safari_warning').style.display = 'none';
-	else
+	// Removed safari warning
+	if (is_safari())
 	{
 		document.querySelector('#about_section .photo').classList.add('safari_fix');
 		document.querySelector('#skills_section .box').classList.add('safari_fix');
 	}
+	// if (!is_safari())
+	// 	document.querySelector('#safari_warning').style.display = 'none';
+	// else
+	// {
+	// 	document.querySelector('#about_section .photo').classList.add('safari_fix');
+	// 	document.querySelector('#skills_section .box').classList.add('safari_fix');
+	// }
 
 	document.querySelector('#loading_screen').style.display = 'none';
 	window.setTimeout(() => { document.querySelector('#lcp').style.display = 'none'; }, 100);

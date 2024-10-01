@@ -39,28 +39,28 @@ ol
 	z-index: 10002;
 }
 
-#safari_warning
-{
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: calc(100% - 100px);
-	background-color: #e72e2e;
-	z-index: 10001;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 18px 50px 18px 50px;
-}
-
-#safari_warning p
-{
-	font-family: proxima_nova_semi_bold;
-	font-size: 16px;
-	color: white;
-	text-align: center;
-	line-height: 22px;
-}
+/* #safari_warning */
+/* { */
+/* 	position: fixed; */
+/* 	bottom: 0; */
+/* 	left: 0; */
+/* 	width: calc(100% - 100px); */
+/* 	background-color: #e72e2e; */
+/* 	z-index: 10001; */
+/* 	display: flex; */
+/* 	align-items: center; */
+/* 	justify-content: center; */
+/* 	padding: 18px 50px 18px 50px; */
+/* } */
+/**/
+/* #safari_warning p */
+/* { */
+/* 	font-family: proxima_nova_semi_bold; */
+/* 	font-size: 16px; */
+/* 	color: white; */
+/* 	text-align: center; */
+/* 	line-height: 22px; */
+/* } */
 
 #lcp
 {

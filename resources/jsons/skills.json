@@ -26,9 +26,24 @@
 					"link": "https://en.wikipedia.org/wiki/Unix"
 				},
 				{
+					"name": "Windows",
+					"logo": "resources/svgs/skills/Windows11.svg",
+					"link": "https://www.microsoft.com/software-download/windows11"
+				},
+				{
 					"name": "Git",
 					"logo": "resources/svgs/skills/Git.svg",
 					"link": "https://git-scm.com/"
+				},
+				{
+					"name": "Docker",
+					"logo": "resources/svgs/skills/Docker.svg",
+					"link": "https://www.docker.com/"
+				},
+				{
+					"name": "Make",
+					"logo": "resources/svgs/skills/GNU_Make.svg",
+					"link": "https://www.gnu.org/software/make/"
 				}
 			]
 		},
@@ -95,7 +110,7 @@
 				{
 					"name": "Docker",
 					"logo": "resources/svgs/skills/Docker.svg",
-					"link": "https://git-scm.com/"
+					"link": "https://www.docker.com/"
 				}
 			]
 		},

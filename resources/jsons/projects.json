@@ -84,7 +84,7 @@
 		{
 			"date": 2024,
 			"title": "ft_transcendence",
-			"type": "School Project",
+			"type": ["School Project"],
 			"description": "A fullstack real-time multiplayer Pong game website. Featuring a Django and MySQL backend, Bootstrap and Three.js for the front end, and Docker for containerization, logging, and monitoring.",
 			"tags":
 			[
@@ -104,7 +104,7 @@
 			"video": "resources/noa/projects/transcendence.mp4",
 			"logo": "https://github.com/noapoleon/42-project-badges/blob/main/badges/ft_transcendencem.png?raw=true",
 			"image": "",
-			"categories": ["School"]
+			"categories": ["School", "Web"]
 		}
 	]
 }
