@@ -22,9 +22,9 @@
 	justify-content: center;
 	align-items: center;
 	height: 100%;
-	background-color: var(--purple);
+	background-color: var(--white);
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-	border-radius: 15px;
+	border-radius: 5px;
 	transition: opacity 0.5s ease-in-out, box-shadow 0.4s ease, transform 0.4s ease !important;
 }
 
@@ -118,20 +118,20 @@
 #projects_section .other_project .logos .links .github svg:hover
 {
 	opacity: 1;
-	stroke: var(--light_blue);
+	stroke: var(--light_red);
 }
 
 #projects_section .other_project .logos .links .test svg:hover
 {
 	opacity: 1;
-	stroke: var(--light_blue);
+	stroke: var(--light_red);
 }
 
 #projects_section .other_project .project_title
 {
 	font-family: calibre_semi_bold;
 	font-size: 28px;
-	color: var(--white);
+	color: var(--dark1);
 	text-decoration: none;
 	margin-bottom: 12px;
 	transition: color 0.2s ease;
@@ -151,7 +151,7 @@
 
 #projects_section .other_project .project_title:hover
 {
-	color: var(--light_blue);
+	color: var(--light_red);
 }
 
 #projects_section .other_project .text
@@ -159,7 +159,7 @@
 	font-family: calibre_regular;
 	font-size: 20px;
 	text-align: start;
-	color: var(--fade_white);
+	color: var(--dark1);
 	margin-bottom: 25px;
 }
 
@@ -177,7 +177,7 @@
 {
 	font-family: raleway_semi_bold;
 	font-size: 15px;
-	color: var(--light_blue);
+	color: var(--light_red);
 	white-space: nowrap;
 	opacity: 0.8;
 }

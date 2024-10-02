@@ -1,10 +1,10 @@
-# 🌐 Portfolio
+# 🌐 Portfolio v1.1
 
 <br/>
 
 A website presenting my projects.
 Needed something quick.
-Working on v2 right now, complete redesign in progress...
+Working on v2.0 right now, complete redesign in progress...
 
 <br/>
 

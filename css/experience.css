@@ -1,11 +1,11 @@
 #experience_section
 {
-	background-color: var(--dark_purple);
+	background-color: var(--dark1);
 }
 
 .experience_end
 {
-	background-color: var(--dark_purple);
+	background-color: var(--dark1);
 }
 
 #experience_section .section_title
@@ -41,32 +41,32 @@
 
 #experience_section .sort_choices .choice
 {
-	color: var(--light_blue);
+	color: var(--light_red);
 	font-family: raleway_semi_bold;
 	font-size: 15px;
 	cursor: pointer;
-	border-radius: 100px;
+	/* border-radius: 100px; */
 	padding: 9px 18px 9px 18px;
-	border: 2px solid var(--light_blue);
+	border: 2px solid var(--light_red);
 	transition: background-color 0.2s ease-in-out;
 }
 
 #experience_section .sort_choices .choice:hover
 {
-	background-color: var(--fade_light_blue);
+	background-color: var(--fade_light_red);
 }
 
 #experience_section .sort_choices .choice.selected
 {
-	color: var(--dark_purple);
-	background-color: var(--light_blue);
+	color: var(--dark_purple2);
+	background-color: var(--light_red);
 	cursor: default;
 	pointer-events: none;
 }
 
 #experience_section .sort_choices .choice.selected:hover
 {
-	background-color: var(--light_blue);
+	background-color: var(--light_red);
 }
 
 #experience_section .experience_content
@@ -176,7 +176,7 @@
 	font-family: raleway_medium;
 	font-size: 16px;
 	white-space: nowrap;
-	color: var(--light_blue);
+	color: var(--light_red);
 	margin-left: 15px;
 	margin-bottom: 10px;
 }
@@ -207,14 +207,14 @@
 
 #experience_section .job_text .job_title:hover
 {
-	color: var(--light_blue);
+	color: var(--light_red);
 }
 
 #experience_section .job_text .text
 {
-	background-color: var(--purple);
+	background-color: var(--white);
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
-	border-radius: 15px;
+	border-radius: 5px;
 	padding: 25px 25px 25px 25px;
 	margin-bottom: 19px;
 	transition: box-shadow 0.3s ease;
@@ -230,7 +230,7 @@
 	font-family: calibre_regular;
 	font-size: 20px;
 	text-align: start;
-	color: var(--fade_white);
+	color: var(--dark1);
 }
 
 #experience_section .inverted .job_text .text p
@@ -261,7 +261,7 @@
 {
 	font-family: raleway_semi_bold;
 	font-size: 16px;
-	color: var(--light_blue);
+	color: var(--light_red);
 	text-decoration: none;
 	opacity: 1;
 	padding: 3px 6px 3px 6px;
@@ -329,7 +329,7 @@
 	position: absolute;
 	text-align: center;
 	bottom: -45px;
-	color: var(--dark_purple);
+	color: var(--dark_purple2);
 	padding: 6px 12px 6px 12px;
 	background-color: var(--color);
 	font-family: raleway_bold;

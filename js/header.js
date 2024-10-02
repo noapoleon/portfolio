@@ -72,10 +72,10 @@ function header_events()
 		if (document.querySelector('#header_div').getBoundingClientRect().bottom <
 			document.querySelector('#home_section .hi').getBoundingClientRect().top)
 		{
-			document.querySelector('#header_div').style.height = '100px';
+			document.querySelector('#header_div').style.height = '120px';
 			document.querySelector('#header_div').style.boxShadow = 'none';
 			document.querySelector('#header_div').style.pointerEvents = 'none';
-			document.querySelector('#header').style.backgroundColor = 'rgba(16, 29, 48, 0)';
+			document.querySelector('#header').style.backgroundColor = 'rgba(20,20,20, 0)';
 			document.querySelector('#header').style.backdropFilter = 'none';
 			document.querySelector('#header').style.webkitBackdropFilter = 'none';
 			header_detached = false;
@@ -83,10 +83,10 @@ function header_events()
 
 		else
 		{
-			document.querySelector('#header_div').style.height = '70px';
+			document.querySelector('#header_div').style.height = '80px';
 			document.querySelector('#header_div').style.boxShadow = '0px 5px 30px rgba(0, 0, 0, 0.7)';
 			document.querySelector('#header_div').style.pointerEvents = 'all';
-			document.querySelector('#header').style.backgroundColor = 'var(--fade_dark_blue)';
+			document.querySelector('#header').style.backgroundColor = 'var(--fade_dark1)';
 			document.querySelector('#header').style.backdropFilter = 'blur(8px)';
 			document.querySelector('#header').style.webkitBackdropFilter = 'blur(8px)';
 			header_detached = true;
@@ -102,7 +102,7 @@ function header_events()
 		{
 			if (header_detached)
 			{
-				document.querySelector('#header_div').style.top = '-73px';
+				document.querySelector('#header_div').style.top = '-80px';
 				document.querySelector('#header_div').style.boxShadow = 'none';
 			}
 		}

@@ -81,10 +81,10 @@
 
 #about_section .link
 {
-	color: var(--blue);
+	color: var(--red);
 }
 
 #about_section .link::before
 {
-	background-color: var(--blue);
+	background-color: var(--red);
 }

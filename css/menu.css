@@ -8,7 +8,8 @@
 	z-index: 100;
 	width: clamp(0px, 100%, 400px);
 	height: 100%;
-	background-color: var(--dark_blue);
+	/* background-color: var(--dark_red); */
+	background-color: var(--dark_red);
 	right: 0px;
 	transform: translateX(clamp(0px, 100%, 400px));
 	transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
@@ -32,7 +33,7 @@
 
 #menu_div .menu_icon:hover
 {
-	stroke: var(--light_blue);
+	stroke: var(--light_red);
 }
 
 #menu_div .menu ol
@@ -67,7 +68,7 @@
 
 #menu_div .menu .not_button:hover
 {
-	color: var(--light_blue);
+	color: var(--light_red);
 }
 
 #menu_div .menu .button
@@ -75,7 +76,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: var(--light_blue);
+	/* color: var(--light_red); */
+	color: var(--light_red);
 	padding: 13.5px 30px 13.5px 34.5px;
 }
 
