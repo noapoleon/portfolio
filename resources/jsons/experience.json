@@ -1,0 +1,20 @@
+{
+	"experience":
+	[
+		{
+			"date": 2022,
+			"type": "Student Developer",
+			"title": "42Paris",
+			"description": "42 is a future-proof computer science training to educate the next generation of software engineers. The 42 program takes a project-based approach to progress and is designed to develop technical and people skills that match the expectations of the labor market.",
+			"tags":
+			[
+				{ "name": "C", "url": "https://en.wikipedia.org/wiki/C_(programming_language)" },
+				{ "name": "C++", "url": "https://isocpp.org/" },
+				{ "name": "Python", "url": "https://www.python.org/" }
+			],
+			"link": "https://42.fr/en/homepage/",
+			"video": "resources/noa/42_intro.mp4",
+			"image": "resources/noa/42_logo.jpg"
+		}
+	]
+}

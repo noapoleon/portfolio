@@ -1,0 +1,110 @@
+{
+	"projects":
+	[
+		{
+			"date": 2022,
+			"type": "School Project",
+			"description": "Sort data on a stack, with a limited set of instructions, using the lowest possible number of actions. Manipulate various types of algorithms and choose the most appropriate solution (out of many) for an optimized data sorting.",
+			"title": "Push Swap",
+			"tags":
+			[
+				{ "name": "C", "url": "https://en.wikipedia.org/wiki/C_(programming_language)" }
+			],
+			"links":
+			[
+				"https://github.com/noapoleon/push_swap",
+				"https://github.com/noapoleon/push_swap",
+				"none"
+			],
+			"video": "resources/noa/projects/push_swap.mp4",
+			"image": "",
+			"logo": "https://github.com/noapoleon/42-project-badges/blob/main/badges/push_swapm.png?raw=true",
+			"categories": ["School"]
+		},
+		{
+			"date": 2022,
+			"type": "School Project",
+			"title": "FdF",
+			"description": "This project is about representing a landscape as a 3D object in which all surfaces are outlined in lines.",
+			"tags":
+			[
+				{ "name": "C", "url": "https://en.wikipedia.org/wiki/C_(programming_language)" }
+			],
+			"links":
+			[
+				"https://github.com/noapoleon/fdf",
+				"https://github.com/noapoleon/fdf",
+				"none"
+			],
+			"video": "resources/noa/projects/fdf.mp4",
+			"image": "",
+			"logo": "https://github.com/noapoleon/42-project-badges/blob/main/badges/fdfm.png?raw=true",
+			"categories": ["School"]
+		},
+		{
+			"date": 2023,
+			"type": "School Project",
+			"title": "Cub3D",
+			"description": "This project is inspired by the world-famous Wolfenstein 3D game, which was the first FPS ever. It uses ray-casting to create a dynamic view inside a maze, in which you’ll have to find your way.",
+			"tags":
+			[
+				{ "name": "C", "url": "https://en.wikipedia.org/wiki/C_(programming_language)" }
+			],
+			"links":
+			[
+				"https://github.com/noapoleon/cub3d",
+				"https://github.com/noapoleon/cub3d",
+				"none"
+			],
+			"video": "resources/noa/projects/cub3d.mp4",
+			"image": "",
+			"logo": "https://github.com/noapoleon/42-project-badges/blob/main/badges/cub3dm.png?raw=true",
+			"categories": ["School"]
+		},
+		{
+			"date": 2023,
+			"type": "School Project",
+			"title": "Minishell",
+			"description": "This project is about creating a simple shell. My own little bash. I learned a lot about processes, file descriptors, tokenization and more",
+			"tags":
+			[
+				{ "name": "C", "url": "https://en.wikipedia.org/wiki/C_(programming_language)" }
+			],
+			"links":
+			[
+				"https://github.com/solvictor/minishell",
+				"https://github.com/solvictor/minishell",
+				"none"
+			],
+			"video": "resources/noa/projects/minishell.mp4",
+			"image": "",
+			"logo": "https://github.com/noapoleon/42-project-badges/blob/main/badges/minishelle.png?raw=true",
+			"categories": ["School"]
+		},
+		{
+			"date": 2024,
+			"title": "ft_transcendence",
+			"type": ["School Project"],
+			"description": "A fullstack real-time multiplayer Pong game website. Featuring a Django and MySQL backend, Bootstrap and Three.js for the front end, and Docker for containerization, logging, and monitoring.",
+			"tags":
+			[
+				{ "name": "Python", "url": "https://www.python.org/" },
+				{ "name": "Django", "url": "https://www.djangoproject.com/" },
+				{ "name": "Javascript", "url": "https://www.javascript.com/" },
+				{ "name": "ThreeJs", "url": "https://threejs.org/" },
+				{ "name": "Bootstrap", "url": "https://getbootstrap.com/" },
+				{ "name": "Docker", "url": "https://www.docker.com/" }
+			],
+			"links":
+			[
+				"https://github.com/Malop47/ft_transcendence",
+				"https://github.com/Malop47/ft_transcendence",
+				"none"
+			],
+			"video": "resources/noa/projects/transcendence.mp4",
+			"logo": "https://github.com/noapoleon/42-project-badges/blob/main/badges/ft_transcendencem.png?raw=true",
+			"image": "",
+			"categories": ["School", "Web"]
+		}
+	]
+}
