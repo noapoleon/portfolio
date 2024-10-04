@@ -2,9 +2,9 @@
 
 <br/>
 
-A website presenting my projects.
-Needed something quick.
-Working on v2.0 right now, complete redesign in progress...
+A website presenting my projects.<br/>
+Needed something quick.<br/>
+Working on v2.0 right now, complete redesign in progress...<br/>
 
 <br/>
 

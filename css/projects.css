@@ -193,7 +193,7 @@
 {
 	font-family: calibre_semi_bold;
 	font-size: 32px;
-	color: var(--white);
+	color: var(--dark1);
 	text-decoration: none;
 	margin-bottom: 12px;
 	margin-left: 15px;
@@ -448,8 +448,8 @@
 		margin-left: 0px;
 		margin-right: 0px;
 		padding: 60px 40px 60px 40px;
-		background-color: rgba(52, 52, 102, 0.75);
-		/* border-radius: 15px; */
+		background-color: var(--white);
+		border-radius: 5px;
 	}
 
 	@media screen and (max-width: 500px)
@@ -485,7 +485,7 @@
 
 	#projects_section .project_text .text p
 	{
-		color: var(--white);
+		color: var(--dark1);
 	}
 
 	#projects_section .project_text .tags

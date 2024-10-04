@@ -63,13 +63,13 @@
 
 body
 {
-	--light_red: #56dcfc;
+	/* --light_red: #56dcfc; */
 	--blue: #197dff;
-	--fade_light_red: rgba(86, 220, 252, 0.15);
+	/* --fade_light_red: rgba(86, 220, 252, 0.15); */
 	/* --light_gray: #8ea9bf; */
 	--white: #f6f9fc;
 	--fade_white: rgb(191, 182, 216);
-	--dark_red: #101d30;
+	/* --dark_red: #101d30; */
 	--fade_dark_blue: rgba(16, 29, 48, 0.9);
 	--black_title: #2b3954;
 	--black_text: #425466;
@@ -77,7 +77,7 @@ body
 	--purple: rgb(52, 52, 102);
 
 	/* new colors */
-	--light_red: #f4034e;
+	--light_red: #f40049;
 	--light_gray: #d5bac1;
 	--red: #c40e47;
 	--fade_light_red: rgba(244, 3, 79, 0.15);
