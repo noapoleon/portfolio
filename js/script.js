@@ -34,6 +34,6 @@ window.onload = () =>
 	// 	document.querySelector('#skills_section .box').classList.add('safari_fix');
 	// }
 
-	document.querySelector('#loading_screen').style.display = 'none';
+	// document.querySelector('#loading_screen').style.display = 'none';
 	window.setTimeout(() => { document.querySelector('#lcp').style.display = 'none'; }, 100);
 };
