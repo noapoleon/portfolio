@@ -193,7 +193,8 @@
 {
 	font-family: calibre_semi_bold;
 	font-size: 32px;
-	color: var(--dark1);
+	/* color: var(--dark1); */
+	color: var(--white);
 	text-decoration: none;
 	margin-bottom: 12px;
 	margin-left: 15px;
