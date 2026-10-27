@@ -3,7 +3,7 @@
 const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const INK = [236, 235, 230];
 const RED = [244, 0, 73];
-const BG = [10, 10, 11];
+const BG = [6, 6, 7];
 
 const BAYER4 = [0, 8, 2, 10, 12, 4, 14, 6, 3, 11, 1, 9, 15, 7, 13, 5].map(v => (v + .5) / 16);
 
