@@ -1,278 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link rel="shortcut icon" type="image/png" href="resources/noa/Favicon.png"/>
-		<title>Noa Legrand Portfolio</title>
-
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-		<meta name="description" content="Noa Legrand portfolio."/>
+		<title>Noa Legrand — Portfolio</title>
+		<link rel="shortcut icon" type="image/png" href="resources/noa/Favicon.png"/>
+		<meta name="description" content="Noa Legrand — software engineer. Systems programming, infrastructure and security."/>
 
 		<meta property="og:locale" content="en_US"/>
 		<meta property="og:type" content="website"/>
 		<meta property="og:url" content="https://www.noalegrand.com/"/>
 		<meta property="og:image" content="https://www.noalegrand.com/resources/noa/Social.png"/>
-		<meta property="og:image:url" content="https://www.noalegrand.com/resources/noa/Social.png"/>
-		<meta property="og:image:secure_url" content="https://www.noalegrand.com/resources/noa/Social.png"/>
 		<meta property="og:image:type" content="image/png"/>
-		<meta property="og:image:width" content="1920"/>
-		<meta property="og:image:height" content="1080"/>
+		<meta property="og:image:width" content="1200"/>
+		<meta property="og:image:height" content="630"/>
+		<meta property="og:image:alt" content="Noa Legrand — Software Engineer, systems · infra · security"/>
 		<meta property="og:title" content="Noa Legrand Portfolio"/>
 		<meta property="og:site_name" content="Noa Legrand Portfolio"/>
-		<meta property="og:description" content="Noa Legrand portfolio."/>
+		<meta property="og:description" content="Software engineering student at 42 Paris — systems programming and infrastructure security."/>
 		<meta name="twitter:title" content="Noa Legrand Portfolio"/>
-		<meta name="twitter:description" content="Noa Legrand portfolio."/>
+		<meta name="twitter:description" content="Software engineering student at 42 Paris — systems programming and infrastructure security."/>
 		<meta name="twitter:image" content="https://www.noalegrand.com/resources/noa/Social.png"/>
 		<meta name="twitter:card" content="summary_large_image"/>
 
-		<script src="libraries/particlesjs/particles.js"></script>
-
-		<script src="js/properties.js"></script>
-		<script src="js/utils.js"></script>
-		<script src="js/videos.js"></script>
-		<script src="js/header.js"></script>
-		<script src="js/home.js"></script>
-		<script src="js/about.js"></script>
-		<script src="js/projects.js"></script>
-		<script src="js/skills.js"></script>
-		<script src="js/experience.js"></script>
-		<script src="js/script.js"></script>
-
-		<link rel="stylesheet" type="text/css" href="css/properties.css"/>
-		<link rel="stylesheet" type="text/css" href="css/style.css"/>
-		<link rel="stylesheet" type="text/css" href="css/header.css"/>
-		<link rel="stylesheet" type="text/css" href="css/menu.css"/>
-		<link rel="stylesheet" type="text/css" href="css/home.css"/>
+		<link rel="preload" href="resources/fonts/archivo/Archivo-latin-var.woff2" as="font" type="font/woff2" crossorigin/>
+		<link rel="preload" href="resources/fonts/jetbrains_mono/JetBrainsMono-latin-var.woff2" as="font" type="font/woff2" crossorigin/>
+		<link rel="preconnect" href="https://raw.githubusercontent.com"/>
+		<link rel="stylesheet" href="css/main.css"/>
+		<script src="js/main.js" defer></script>
 	</head>
 	<body>
-		<!-- <div id="loading_screen"></div> -->
-		<!-- <div id="safari_warning"> -->
-		<!-- 	<p> -->
-		<!-- 		You are using Safari. This website is not optimized for this browser. -->
-		<!-- 		Please use another browser like Chrome or Firefox. -->
-		<!-- 	</p> -->
-		<!-- </div> -->
-		<div id="lcp"><p>LCP</p></div>
-		<div id="header_div">
-			<header id="header">
-				<nav class="nav">
-					<div class="logo">
-						<a class="in_animation in_animation_fast" href="https://www.noalegrand.com/">
-							<img src="resources/noa/stardude2_1024_nobg.png" alt="logo" width="35px" height="35px"/>
-						</a>
-					</div>
-					<div class="menu">
-						<ol>
-							<li class="home in_animation"><a class="not_button" href="#home">Home</a></li>
-							<li class="about in_animation"><a class="not_button" href="#about">About</a></li>
-							<li class="projects in_animation"><a class="not_button" href="#projects">Projects</a></li>
-							<li class="skills in_animation"><a class="not_button" href="#skills">Skills</a></li>
-							<li class="experience in_animation"><a class="not_button" href="#experience">Experience</a></li>
-							<li class="contact in_animation">
-								<a class="button" href="#contact">
-									<p>Contact</p>
-									<svg class="button_arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.69 17.39"><g>
-										<path class="path_1" d="M8.9 12.4 L8.9 12.4"/>
-										<path class="path_2" d="M16.2 5 8.9 12.4 1.5 5"/></g>
-									</svg>
-								</a>
-							</li>
-						</ol>
-					</div>
-					<svg class="menu_icon" viewBox="0 0 140 100" xmlns="http://www.w3.org/2000/svg">
-						<line x1="10" y1="10" x2="130" y2="10"/>
-						<line x1="30" y1="50" x2="130" y2="50"/>
-						<line x1="50" y1="90" x2="130" y2="90"/>
-					</svg>
-				</nav>
-			</header>
+		<!-- texture layers -->
+		<svg class="defs" aria-hidden="true">
+			<filter id="rough">
+				<feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="4" seed="7"/>
+				<feDisplacementMap in="SourceGraphic" scale="9"/>
+			</filter>
+			<filter id="ink">
+				<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="n"/>
+				<feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.2 1.4" result="holes"/>
+				<feComposite in="SourceGraphic" in2="holes" operator="in" result="speckled"/>
+				<feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="3" result="w"/>
+				<feDisplacementMap in="speckled" in2="w" scale="14"/>
+			</filter>
+		</svg>
+		<div class="grain" aria-hidden="true"></div>
+		<div class="scan" aria-hidden="true"></div>
+		<div class="frame" aria-hidden="true">
+			<i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i>
 		</div>
 
-		<div id="menu_div">
-			<svg class="menu_icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-				<line x1="10" y1="10" x2="90" y2="90"/>
-				<line x1="10" y1="90" x2="90" y2="10"/>
-			</svg>
-			<div class="menu">
-				<ol>
-					<li class="home"><a class="not_button" href="#home">Home</a></li>
-					<li class="about"><a class="not_button" href="#about">About</a></li>
-					<li class="projects"><a class="not_button" href="#projects">Projects</a></li>
-					<li class="skills"><a class="not_button" href="#skills">Skills</a></li>
-					<li class="experience"><a class="not_button" href="#experience">Experience</a></li>
-					<li class="contact">
-						<a class="button" href="#contact">
-							<p>Contact</p>
-							<svg class="button_arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.69 17.39"><g>
-								<path class="path_1" d="M8.9 12.4 L8.9 12.4"/>
-								<path class="path_2" d="M16.2 5 8.9 12.4 1.5 5"/></g>
-							</svg>
-						</a>
-					</li>
-				</ol>
+		<header class="hud">
+			<a class="brand" href="#top" aria-label="home">
+				<img src="resources/noa/stardude2_1024_nobg.png" alt="" width="28" height="28"/>
+				<span>NL<em>/</em>v2</span>
+			</a>
+			<nav class="nav" id="nav">
+				<a href="#about"><b>01</b>About</a>
+				<a href="#projects"><b>02</b>Work</a>
+				<a href="#skills"><b>03</b>Stack</a>
+				<a href="#experience"><b>04</b>Path</a>
+				<a href="#contact"><b>05</b>Contact</a>
+			</nav>
+			<div class="hud-meta">
+				<span class="dot"></span>
+				<span>PARIS <span id="clock">--:--:--</span></span>
 			</div>
-		</div>
+			<button class="menu-btn" id="menu-btn" aria-label="menu" aria-expanded="false"><span></span><span></span></button>
+		</header>
 
-		<div id="content">
-			<main id="main">
-				<a id="home"></a>
-				<section class="section" id="home_section">
-					<div id="particles"></div>
-					<div class="content">
-						<span class="hi in_animation">Hi, my name is</span>
-						<span class="name in_animation">Noa Legrand</span>
-						<span class="title in_animation">Software Developer</span>
-						<p class="bio in_animation">
-							21-year-old student developer at <a class="link" href="https://42.fr/en/homepage/" target="_blank">42 Paris</a>.<br/>
-							Passionate self-learner focused on software development, virtualization, and system security.<br/>
-							Always eager to learn and open to new opportunities and collaborations!
+		<main id="top">
+			<!-- HERO -->
+			<section class="hero">
+				<canvas id="field" aria-hidden="true"></canvas>
+				<div class="hero-grid">
+					<div class="hero-tag mono">
+						<span>[ SYS.ONLINE ]</span>
+						<span>48.8966° N / 2.3185° E</span>
+					</div>
+					<h1 class="hero-name">
+						<span class="line"><span class="word" data-scramble>NOA</span></span>
+						<span class="line indent"><span class="word" data-scramble>LEGRAND</span><span class="blk"></span></span>
+					</h1>
+					<div class="hero-foot">
+						<p class="role">
+							<span class="mono red">&gt; role:</span> Software Engineer<br/>
+							<span class="mono red">&gt; base:</span> <a class="ul" href="https://42.fr/en/homepage/" target="_blank" rel="noopener">42 Paris</a><br/>
+							<span class="mono red">&gt; focus:</span> systems, infrastructure, security
 						</p>
-						<div class="home_button in_animation">
-							<a class="button" href="#about">
-								<p>About me</p>
-								<svg class="button_arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.69 17.39"><g>
-									<path class="path_1" d="M8.9 12.4 L8.9 12.4"/>
-									<path class="path_2" d="M16.2 5 8.9 12.4 1.5 5"/>
-								</g></svg>
-							</a>
-						</div>
+						<a class="cta" href="#projects">
+							<span>View work</span>
+							<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+						</a>
 					</div>
-				</section>
-
-				<link rel="stylesheet" type="text/css" href="css/about.css"/>
-
-				<a id="about"></a>
-				<section class="section" id="about_section">
-					<div class="content">
-						<span class="section_title">Who am I?</span>
-						<div class="about_content">
-							<p class="p_1">
-								Hi, I’m Noa Legrand, a 21-year-old developer passionate about science, math, and programming. I’ve built a variety of projects, from websites to games and applications <i>(see the <a class="link" href="#projects">project</a> section).</i><br/><br/>
-
-								I continuously push myself to explore new ideas and tackle exciting challenges. Recently, I’ve been diving into homelabbing, gaining practical experience in networking and system administration.<br/><br/>
-
-								Since 2022, I’ve been studying at <a class="link" href="https://42.fr/en/homepage/" target="_blank">42 Paris</a>, where I’ve deepened my understanding of software development. The blend of theory and hands-on practice has been invaluable.<br/><br/>
-
-								I’m currently working towards an RNCP 7 certification and seeking an internship to further develop my skills in Software Development and System Security through practical experience.<br/><br/>
-							</p>
-							<div class="photo">
-								<img class="in_animation" src="resources/noa/headshot_col_1024.png" alt="photo" width="760px" height="760px"/>
-							</div>
-						</div>
+				</div>
+				<div class="marquee" aria-hidden="true">
+					<div class="track">
+						<span>C</span><i>✦</i><span>C++</span><i>✦</i><span>Rust</span><i>✦</i><span>Java</span><i>✦</i><span>Python</span><i>✦</i><span>Linux</span><i>✦</i><span>Docker</span><i>✦</i><span>Kubernetes</span><i>✦</i><span>Caddy</span><i>✦</i><span>Homelab</span><i>✦</i>
+						<span>C</span><i>✦</i><span>C++</span><i>✦</i><span>Rust</span><i>✦</i><span>Java</span><i>✦</i><span>Python</span><i>✦</i><span>Linux</span><i>✦</i><span>Docker</span><i>✦</i><span>Kubernetes</span><i>✦</i><span>Caddy</span><i>✦</i><span>Homelab</span><i>✦</i>
 					</div>
-				</section>
-				<div class="section_end about_end"></div>
+				</div>
+			</section>
 
-				<link rel="stylesheet" type="text/css" href="css/projects.css"/>
-				<link rel="stylesheet" type="text/css" href="css/other_projects.css"/>
-
-				<!-- TODO: change categories and put transcendence in web -->
-				<a id="projects"></a>
-				<section class="section" id="projects_section">
-					<div class="content leaning">
-						<span class="section_title">Some of my Projects</span>
-						<div class="sort_choices">
-							<span class="label">Sort by</span>
-							<div class="choice selected">Default</div>
-							<div class="choice">Date</div>
-							<div class="choice">School</div>
-							<div class="choice">Personal</div>
-							<div class="choice">Web</div>
-						</div>
-						<div class="projects_content"></div>
-						<div class="other_projects_content"></div>
+			<!-- ABOUT -->
+			<section class="sec" id="about">
+				<div class="sec-head">
+					<span class="idx mono">01</span>
+					<h2 class="ttl"><span class="brush"></span>Who am I</h2>
+					<span class="rule"></span>
+					<span class="mono dim">/about</span>
+				</div>
+				<div class="about">
+					<div class="about-text reveal">
+						<p class="lead">
+							A <span data-age>23</span>-year-old software engineering student at 42 Paris, focused on
+							<span class="red">systems programming</span> and <span class="red">infrastructure security</span>.
+						</p>
+						<p>
+							Most of what I build sits close to the system: shells, servers and tools in C, <span class="nowrap">C++</span> and Rust, and the containers and infrastructure they run on. I learn best by building things from scratch.
+						</p>
+						<p>
+							I’m currently studying at <a class="ul" href="https://42.fr/en/homepage/" target="_blank" rel="noopener">42 Paris</a> towards an <b>RNCP 7</b> (master’s equivalent). As part of the curriculum, I did a six-month internship in a cybersecurity team at <b>Thales</b>, building automation tooling, secure CI/CD workflows and a vulnerability-management platform.
+						</p>
+						<p>
+							Off the clock I run a <b>homelab</b> of 30+ self-hosted services, all in Docker, managed from Dockhand, exposed through Caddy and driven from tmux + Neovim. It covers photo backups (Immich), documents and notes (Paperless, SilverBullet), home automation (Home Assistant, Frigate), file sharing, monitoring (Uptime Kuma), and a handful of game servers (Minecraft, Factorio, Valheim).
+						</p>
+						<dl class="specs mono">
+							<div><dt>STATUS</dt><dd><span class="dot"></span>open to opportunities</dd></div>
+							<div><dt>INTERNSHIP</dt><dd>Thales — cybersecurity, 2025–26</dd></div>
+							<div><dt>SCHOOL</dt><dd>42 Paris — since 2022</dd></div>
+							<div><dt>HOMELAB</dt><dd>30+ self-hosted services</dd></div>
+							<div><dt>LANGS</dt><dd>French · English C2 · Spanish B1</dd></div>
+						</dl>
 					</div>
-				</section>
-				<div class="section_end projects_end"></div>
-
-				<link rel="stylesheet" type="text/css" href="css/skills.css"/>
-
-				<a id="skills"></a>
-				<section class="section" id="skills_section">
-					<div class="content leaning">
-						<span class="section_title">What are my Skills?</span>
-						<div class="skills_content">
-							<div class="box"></div>
+					<figure class="portrait reveal">
+						<div class="portrait-box">
+							<img id="portrait-src" src="resources/noa/headshot_800.webp" alt="Portrait of Noa Legrand" width="800" height="800" loading="lazy" decoding="async"/>
+							<canvas id="portrait-dither" aria-hidden="true"></canvas>
 						</div>
-					</div>
-				</section>
-				<div class="section_end skills_end"></div>
+						<figcaption class="mono"><span>IMG_0001.PNG</span><span>hover → decode</span></figcaption>
+					</figure>
+				</div>
+			</section>
 
-				<link rel="stylesheet" type="text/css" href="css/experience.css"/>
+			<!-- PROJECTS -->
+			<section class="sec" id="projects">
+				<div class="sec-head">
+					<span class="idx mono">02</span>
+					<h2 class="ttl"><span class="brush"></span>Selected work</h2>
+					<span class="rule"></span>
+					<span class="mono dim" id="proj-count">/work</span>
+				</div>
+				<div class="filters mono" id="filters">
+					<button class="on" data-f="All">All</button>
+					<button data-f="School">School</button>
+					<button data-f="Client">Client</button>
+					<button data-f="Web">Web</button>
+				</div>
+				<div class="projects" id="project-list"></div>
+			</section>
 
-				<a id="experience"></a>
-				<section class="section" id="experience_section">
-					<div class="content leaning">
-						<span class="section_title">My Experience</span>
-						<div class="experience_content"></div>
-					</div>
-				</section>
-				<div class="section_end experience_end"></div>
+			<!-- SKILLS -->
+			<section class="sec" id="skills">
+				<div class="sec-head">
+					<span class="idx mono">03</span>
+					<h2 class="ttl"><span class="brush"></span>Stack</h2>
+					<span class="rule"></span>
+					<span class="mono dim">/skills</span>
+				</div>
+				<div class="skills" id="skill-list"></div>
+			</section>
 
-				<link rel="stylesheet" type="text/css" href="css/contact.css"/>
+			<!-- EXPERIENCE -->
+			<section class="sec" id="experience">
+				<div class="sec-head">
+					<span class="idx mono">04</span>
+					<h2 class="ttl"><span class="brush"></span>Path</h2>
+					<span class="rule"></span>
+					<span class="mono dim">/experience</span>
+				</div>
+				<div class="timeline" id="exp-list"></div>
+			</section>
 
-				<a id="contact"></a>
-				<section class="section" id="contact_section">
-					<div class="content leaning">
-						<span class="section_title">How to contact me?</span>
-						<div class="contact_content">
-							<div class="social_line">
-								<a class="social_link" href="https://www.linkedin.com/in/noalegrand/" target="_blank" style="--size: 128px;">
-									<img src="resources/svgs/contact/Linkedin.svg" alt="linkedin" width="50px" height="50px"/>
-									<div class="social_text">
-										<span>in/noalegrand</span>
-									</div>
-								</a>
-							</div>
-							<div class="social_line">
-								<a class="social_link" href="https://github.com/noapoleon" target="_blank" style="--size: 100px;">
-									<img src="resources/svgs/contact/GitHub.svg" alt="github" width="50px" height="50px"/>
-									<div class="social_text">
-										<span>noapoleon</span>
-									</div>
-								</a>
-							</div>
-							<div class="social_line">
-								<div class="social_link" style="--size: 262px;">
-									<a href="mailto: noalegrand.work@gmail.com" target="_blank">
-										<img src="resources/svgs/contact/Mail.svg" alt="mail" width="50px" height="50px"/>
-									</a>
-									<div class="social_text">
-										<span>noalegrand.work@gmail.com</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
+			<!-- CONTACT -->
+			<section class="sec contact" id="contact">
+				<div class="sec-head">
+					<span class="idx mono">05</span>
+					<h2 class="ttl"><span class="brush"></span>Contact</h2>
+					<span class="rule"></span>
+					<span class="mono dim">/ping</span>
+				</div>
+				<a class="big-mail" href="mailto:noalegrand.work@gmail.com">
+					<span class="mono dim">&gt; open channel</span>
+					<span class="big">Let’s build<br/>something<span class="red">.</span></span>
+					<span class="addr mono">noalegrand.work@gmail.com <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+				</a>
+				<ul class="links mono">
+					<li><a href="https://www.linkedin.com/in/noalegrand/" target="_blank" rel="noopener"><span>LinkedIn</span><span class="dim">in/noalegrand</span><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a></li>
+					<li><a href="https://github.com/noapoleon" target="_blank" rel="noopener"><span>GitHub</span><span class="dim">@noapoleon</span><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a></li>
+					<li><a href="mailto:noalegrand.work@gmail.com"><span>Mail</span><span class="dim">noalegrand.work@gmail.com</span><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a></li>
+				</ul>
+			</section>
+		</main>
 
-				<link rel="stylesheet" type="text/css" href="css/footer.css"/>
-
-				<footer class="section" id="footer_section">
-					<div class="content">
-						<div class="footer_content">
-							<a class="footer_licence" href="https://github.com/noapoleon/portfolio/blob/main/LICENSE.md" target="_blank">
-								<span>© 2024</span>
-								<img src="resources/svgs/license.svg" alt="license" width="20px" height="20px"/>
-								<span>MIT license</span>
-							</a>
-							<a class="" href="https://github.com/noapoleon/portfolio" target="_blank">
-								<span>See the repository on GitHub</span>
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.05 20.31"><g><path d="M7.26 16.34c-4.11 1.23-4.11-2.06-5.76-2.47M13 18.81V15.62a2.78 2.78 0 0 0-.77-2.15c2.59-.28 5.3-1.26 5.3-5.76a4.46 4.46 0 0 0-1.23-3.08 4.18 4.18 0 0 0-.08-3.11s-1-.29-3.22 1.22a11 11 0 0 0-5.76 0C5 1.23 4 1.52 4 1.52A4.18 4.18 0 0 0 4 4.63 4.48 4.48 0 0 0 2.73 7.74c0 4.46 2.72 5.44 5.31 5.76a2.8 2.8 0 0 0-.78 2.12v3.19"/></g></svg>
-							</a>
-						</div>
-						<div class="footer_content">
-							<p>
-								v1.1<br/><br/>
-								Built by using only vanilla HTML, CSS and JavaScript.<br/>
-								Thank you for reading to the end, I hope you enjoyed this website.<br/><br/>
-								v2.0 in progress...
-							</p>
-						</div>
-					</div>
-				</footer>
-			</main>
-		</div>
+		<footer class="foot mono">
+			<span>© 2026 Noa Legrand</span>
+			<a href="https://github.com/noapoleon/portfolio/blob/main/LICENSE.md" target="_blank" rel="noopener">MIT license</a>
+			<span>v2.0-proto · vanilla HTML/CSS/JS</span>
+			<a href="https://github.com/noapoleon/portfolio" target="_blank" rel="noopener">source ↗</a>
+		</footer>
 	</body>
 </html>

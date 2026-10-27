@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="preload" href="../resources/fonts/archivo/Archivo-latin-var.woff2" as="font" type="font/woff2" crossorigin/>
+<link rel="preload" href="../resources/fonts/jetbrains_mono/JetBrainsMono-latin-var.woff2" as="font" type="font/woff2" crossorigin/>
+<link rel="stylesheet" href="../css/main.css"/>
+<style>
+	html, body { width: 1200px; height: 630px; overflow: hidden; margin: 0; }
+	.card { position: relative; width: 1200px; height: 630px; overflow: hidden; background: var(--bg); }
+	#f { position: absolute; inset: 0; width: 100%; height: 100%; image-rendering: pixelated; }
+	.card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, var(--bg) 0%, rgba(10,10,11,.6) 48%, transparent 78%); }
+	.in { position: absolute; inset: 0; z-index: 2; padding: 56px 64px; display: flex; flex-direction: column; justify-content: space-between; }
+	.top, .bot { display: flex; justify-content: space-between; align-items: center; font-family: var(--mono); font-size: 18px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-dim); }
+	.top b { color: var(--red); font-weight: 500; }
+	.top span:last-child, .bot span:last-child { background: rgba(10,10,11,.85); border: 1px solid var(--line); padding: 8px 14px; color: var(--ink); }
+	h1 { margin: 0; font-weight: 900; font-variation-settings: "wdth" 125; font-size: 150px; line-height: .84; letter-spacing: -.045em; text-transform: uppercase; color: var(--ink); }
+	h1 span { display: block; padding-left: 60px; color: transparent; -webkit-text-stroke: 2px var(--ink); }
+	h1 i { display: inline-block; width: 18px; height: 104px; background: var(--red); margin-left: 10px; }
+	.role { white-space: nowrap; font-family: var(--sans); font-size: 28px; font-variation-settings: "wdth" 100; font-weight: 600; color: var(--ink); text-transform: none; letter-spacing: -.01em; }
+	.role em { color: var(--red); font-style: normal; }
+	.grain { position: absolute; inset: 0; animation: none; opacity: .1; z-index: 3; }
+	.frame { position: absolute; inset: 18px; z-index: 4; }
+</style>
+</head>
+<body>
+<div class="card">
+	<canvas id="f"></canvas>
+	<div class="grain"></div>
+	<div class="frame"><i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i></div>
+	<div class="in">
+		<div class="top"><span><b>[ NL/V2 ]</b>&nbsp;&nbsp;Portfolio</span><span>Paris, FR</span></div>
+		<h1>Noa<span>Legrand<i></i></span></h1>
+		<div class="bot"><span class="role">Software Engineer <em>/</em> systems · infra · security</span><span>noalegrand.com</span></div>
+	</div>
+</div>
+<script>
+// static frame of the hero field (same algorithm as js/main.js)
+const BAYER4 = [0, 8, 2, 10, 12, 4, 14, 6, 3, 11, 1, 9, 15, 7, 13, 5].map(v => (v + .5) / 16);
+function makeNoise(seed = 1337)
+{
+	const p = new Uint8Array(512), perm = [...Array(256).keys()];
+	for (let i = 255; i > 0; i--) { seed = (seed * 16807) % 2147483647; const j = seed % (i + 1); [perm[i], perm[j]] = [perm[j], perm[i]]; }
+	for (let i = 0; i < 512; i++) p[i] = perm[i & 255];
+	const fade = t => t * t * (3 - 2 * t), h = (x, y) => p[p[x & 255] + (y & 255)] / 255;
+	return (x, y) =>
+	{
+		const xi = Math.floor(x), yi = Math.floor(y), u = fade(x - xi), v = fade(y - yi);
+		const a = h(xi, yi), b = h(xi + 1, yi), c = h(xi, yi + 1), d = h(xi + 1, yi + 1);
+		return a + (b - a) * u + (c - a) * v + (a - b - c + d) * u * v;
+	};
+}
+const cv = document.getElementById('f'), ctx = cv.getContext('2d'), noise = makeNoise();
+const w = cv.width = 240, h = cv.height = 126, t = 2.4;
+const img = ctx.createImageData(w, h), buf = new Uint32Array(img.data.buffer);
+const pack = ([r, g, b]) => (255 << 24) | (b << 16) | (g << 8) | r;
+const INK = pack([236, 235, 230]), RED = pack([244, 0, 73]), DEEP = pack([120, 0, 36]);
+for (let y = 0; y < h; y++) for (let x = 0; x < w; x++)
+{
+	const nx = x * .025, ny = y * .04, q = noise(nx + t, ny - t * .6);
+	let v = noise(nx + q * 2.2, ny + q * 1.6 + t * .4) * .65 + noise(nx * 2.7 - t, ny * 2.7) * .35 + (x / w - .6) * .55;
+	const th = BAYER4[(y & 3) * 4 + (x & 3)], i = y * w + x;
+	buf[i] = v > .86 + th * .16 ? INK : v > .62 + th * .22 ? RED : (v > .5 + th * .2 && ((x + y) & 1)) ? DEEP : 0;
+}
+ctx.putImageData(img, 0, 0);
+</script>
+</body>
+</html>

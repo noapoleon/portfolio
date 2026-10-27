@@ -1,110 +1,242 @@
 {
-	"projects":
-	[
+	"projects": [
+		{
+			"date": 2026,
+			"type": "Client Project",
+			"title": "Groupe France Negoce",
+			"description": "Production website for a used-vehicle dealer: a public catalog with live-filtered inventory, vehicle pages and favorites, plus an admin panel behind password + 2FA (vehicles, photos, messages, stats, audit log). FastAPI + SQLite back end, vanilla front end, rate limiting and CSP hardening, automated backups — shipped as a Docker image behind Caddy for HTTPS.",
+			"tags": [
+				{
+					"name": "Python",
+					"url": "https://www.python.org/"
+				},
+				{
+					"name": "FastAPI",
+					"url": "https://fastapi.tiangolo.com/"
+				},
+				{
+					"name": "SQLite",
+					"url": "https://sqlite.org/"
+				},
+				{
+					"name": "JavaScript",
+					"url": "https://en.wikipedia.org/wiki/JavaScript"
+				},
+				{
+					"name": "Docker",
+					"url": "https://www.docker.com/"
+				},
+				{
+					"name": "Caddy",
+					"url": "https://caddyserver.com/"
+				}
+			],
+			"links": [
+				"https://gfn-auto.fr/",
+				"none",
+				"https://gfn-auto.fr/"
+			],
+			"video": "",
+			"image": "resources/noa/projects/gfn-auto.webp",
+			"logo": "",
+			"categories": [
+				"Client",
+				"Web"
+			]
+		},
+		{
+			"date": 2024,
+			"type": "School Project",
+			"title": "Inception",
+			"description": "A secured multi-container infrastructure with Docker Compose: NGINX with TLS in front of WordPress/php-fpm and MariaDB, plus Redis caching, an FTP server, Adminer, a static site and Uptime Kuma monitoring.",
+			"tags": [
+				{
+					"name": "Docker",
+					"url": "https://www.docker.com/"
+				},
+				{
+					"name": "NGINX",
+					"url": "https://nginx.org/"
+				},
+				{
+					"name": "MariaDB",
+					"url": "https://mariadb.org/"
+				},
+				{
+					"name": "Redis",
+					"url": "https://redis.io/"
+				}
+			],
+			"links": [
+				"https://github.com/noapoleon/inception",
+				"https://github.com/noapoleon/inception",
+				"none"
+			],
+			"video": "",
+			"image": "",
+			"logo": "https://raw.githubusercontent.com/noapoleon/42-project-badges/main/badges/inceptionm.png",
+			"categories": [
+				"School"
+			]
+		},
+		{
+			"date": 2023,
+			"type": "School Project",
+			"title": "Philosophers",
+			"description": "The dining philosophers problem, solved with threads and mutexes. A study in concurrent programming: sharing resources without data races or deadlocks.",
+			"tags": [
+				{
+					"name": "C",
+					"url": "https://en.wikipedia.org/wiki/C_(programming_language)"
+				}
+			],
+			"links": [
+				"https://github.com/noapoleon/philosophers",
+				"https://github.com/noapoleon/philosophers",
+				"none"
+			],
+			"video": "",
+			"image": "",
+			"logo": "https://raw.githubusercontent.com/noapoleon/42-project-badges/main/badges/philosophersm.png",
+			"categories": [
+				"School"
+			]
+		},
 		{
 			"date": 2022,
 			"type": "School Project",
 			"description": "Sort data on a stack, with a limited set of instructions, using the lowest possible number of actions. Manipulate various types of algorithms and choose the most appropriate solution (out of many) for an optimized data sorting.",
 			"title": "Push Swap",
-			"tags":
-			[
-				{ "name": "C", "url": "https://en.wikipedia.org/wiki/C_(programming_language)" }
+			"tags": [
+				{
+					"name": "C",
+					"url": "https://en.wikipedia.org/wiki/C_(programming_language)"
+				}
 			],
-			"links":
-			[
+			"links": [
 				"https://github.com/noapoleon/push_swap",
 				"https://github.com/noapoleon/push_swap",
 				"none"
 			],
 			"video": "resources/noa/projects/push_swap.mp4",
 			"image": "",
-			"logo": "https://github.com/noapoleon/42-project-badges/blob/main/badges/push_swapm.png?raw=true",
-			"categories": ["School"]
+			"logo": "https://raw.githubusercontent.com/noapoleon/42-project-badges/main/badges/push_swapm.png",
+			"categories": [
+				"School"
+			]
 		},
 		{
 			"date": 2022,
 			"type": "School Project",
 			"title": "FdF",
 			"description": "This project is about representing a landscape as a 3D object in which all surfaces are outlined in lines.",
-			"tags":
-			[
-				{ "name": "C", "url": "https://en.wikipedia.org/wiki/C_(programming_language)" }
+			"tags": [
+				{
+					"name": "C",
+					"url": "https://en.wikipedia.org/wiki/C_(programming_language)"
+				}
 			],
-			"links":
-			[
+			"links": [
 				"https://github.com/noapoleon/fdf",
 				"https://github.com/noapoleon/fdf",
 				"none"
 			],
 			"video": "resources/noa/projects/fdf.mp4",
 			"image": "",
-			"logo": "https://github.com/noapoleon/42-project-badges/blob/main/badges/fdfm.png?raw=true",
-			"categories": ["School"]
+			"logo": "https://raw.githubusercontent.com/noapoleon/42-project-badges/main/badges/fdfm.png",
+			"categories": [
+				"School"
+			]
 		},
 		{
 			"date": 2023,
 			"type": "School Project",
 			"title": "Cub3D",
 			"description": "This project is inspired by the world-famous Wolfenstein 3D game, which was the first FPS ever. It uses ray-casting to create a dynamic view inside a maze, in which you’ll have to find your way.",
-			"tags":
-			[
-				{ "name": "C", "url": "https://en.wikipedia.org/wiki/C_(programming_language)" }
+			"tags": [
+				{
+					"name": "C",
+					"url": "https://en.wikipedia.org/wiki/C_(programming_language)"
+				}
 			],
-			"links":
-			[
+			"links": [
 				"https://github.com/noapoleon/cub3d",
 				"https://github.com/noapoleon/cub3d",
 				"none"
 			],
 			"video": "resources/noa/projects/cub3d.mp4",
 			"image": "",
-			"logo": "https://github.com/noapoleon/42-project-badges/blob/main/badges/cub3dm.png?raw=true",
-			"categories": ["School"]
+			"logo": "https://raw.githubusercontent.com/noapoleon/42-project-badges/main/badges/cub3dm.png",
+			"categories": [
+				"School"
+			]
 		},
 		{
 			"date": 2023,
 			"type": "School Project",
 			"title": "Minishell",
 			"description": "This project is about creating a simple shell. My own little bash. I learned a lot about processes, file descriptors, tokenization and more",
-			"tags":
-			[
-				{ "name": "C", "url": "https://en.wikipedia.org/wiki/C_(programming_language)" }
+			"tags": [
+				{
+					"name": "C",
+					"url": "https://en.wikipedia.org/wiki/C_(programming_language)"
+				}
 			],
-			"links":
-			[
+			"links": [
 				"https://github.com/solvictor/minishell",
 				"https://github.com/solvictor/minishell",
 				"none"
 			],
 			"video": "resources/noa/projects/minishell.mp4",
 			"image": "",
-			"logo": "https://github.com/noapoleon/42-project-badges/blob/main/badges/minishelle.png?raw=true",
-			"categories": ["School"]
+			"logo": "https://raw.githubusercontent.com/noapoleon/42-project-badges/main/badges/minishelle.png",
+			"categories": [
+				"School"
+			]
 		},
 		{
 			"date": 2024,
 			"title": "ft_transcendence",
-			"type": ["School Project"],
-			"description": "A fullstack real-time multiplayer Pong game website. Featuring a Django and MySQL backend, Bootstrap and Three.js for the front end, and Docker for containerization, logging, and monitoring.",
-			"tags":
-			[
-				{ "name": "Python", "url": "https://www.python.org/" },
-				{ "name": "Django", "url": "https://www.djangoproject.com/" },
-				{ "name": "Javascript", "url": "https://www.javascript.com/" },
-				{ "name": "ThreeJs", "url": "https://threejs.org/" },
-				{ "name": "Bootstrap", "url": "https://getbootstrap.com/" },
-				{ "name": "Docker", "url": "https://www.docker.com/" }
+			"type": "School Project",
+			"description": "A real-time multiplayer 3D Pong platform built as microservices. Django, PostgreSQL and Redis on the back end, Three.js on the front, WebSockets for live play — all containerized with Docker Compose, with Vault for secrets and a Grafana/ELK observability stack.",
+			"tags": [
+				{
+					"name": "Python",
+					"url": "https://www.python.org/"
+				},
+				{
+					"name": "Django",
+					"url": "https://www.djangoproject.com/"
+				},
+				{
+					"name": "Javascript",
+					"url": "https://www.javascript.com/"
+				},
+				{
+					"name": "ThreeJs",
+					"url": "https://threejs.org/"
+				},
+				{
+					"name": "Bootstrap",
+					"url": "https://getbootstrap.com/"
+				},
+				{
+					"name": "Docker",
+					"url": "https://www.docker.com/"
+				}
 			],
-			"links":
-			[
+			"links": [
 				"https://github.com/Malop47/ft_transcendence",
 				"https://github.com/Malop47/ft_transcendence",
 				"none"
 			],
 			"video": "resources/noa/projects/transcendence.mp4",
-			"logo": "https://github.com/noapoleon/42-project-badges/blob/main/badges/ft_transcendencem.png?raw=true",
+			"logo": "https://raw.githubusercontent.com/noapoleon/42-project-badges/main/badges/ft_transcendencem.png",
 			"image": "",
-			"categories": ["School", "Web"]
+			"categories": [
+				"School",
+				"Web"
+			]
 		}
 	]
 }

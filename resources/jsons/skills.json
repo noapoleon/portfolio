@@ -1,10 +1,8 @@
 {
-	"skills_categories":
-	[
+	"skills_categories": [
 		{
-			"name" : "Software Development",
-			"skills" :
-			[
+			"name": "Systems",
+			"skills": [
 				{
 					"name": "C",
 					"logo": "resources/svgs/skills/C.svg",
@@ -13,7 +11,27 @@
 				{
 					"name": "C++",
 					"logo": "resources/svgs/skills/Cpp.svg",
-					"link": "https://en.wikipedia.org/wiki/C%2B%2B"
+					"link": "https://isocpp.org/"
+				},
+				{
+					"name": "Rust",
+					"logo": "resources/svgs/skills/Rust.svg",
+					"link": "https://www.rust-lang.org/"
+				},
+				{
+					"name": "Bash",
+					"logo": "resources/svgs/skills/Bash.svg",
+					"link": "https://www.gnu.org/software/bash/"
+				}
+			]
+		},
+		{
+			"name": "Software",
+			"skills": [
+				{
+					"name": "Java",
+					"logo": "resources/svgs/skills/Java.svg",
+					"link": "https://www.java.com/"
 				},
 				{
 					"name": "Python",
@@ -21,153 +39,99 @@
 					"link": "https://www.python.org/"
 				},
 				{
-					"name": "Unix",
-					"logo": "resources/svgs/skills/Unix.svg",
-					"link": "https://en.wikipedia.org/wiki/Unix"
+					"name": "JavaScript",
+					"logo": "resources/svgs/skills/JavaScript.svg",
+					"link": "https://en.wikipedia.org/wiki/JavaScript"
 				},
 				{
-					"name": "Windows",
-					"logo": "resources/svgs/skills/Windows11.svg",
-					"link": "https://www.microsoft.com/software-download/windows11"
+					"name": "Vue.js",
+					"logo": "resources/svgs/skills/Vue.svg",
+					"link": "https://vuejs.org/"
 				},
 				{
-					"name": "Git",
-					"logo": "resources/svgs/skills/Git.svg",
-					"link": "https://git-scm.com/"
+					"name": "FastAPI",
+					"logo": "resources/svgs/skills/FastAPI.svg",
+					"link": "https://fastapi.tiangolo.com/"
+				}
+			]
+		},
+		{
+			"name": "Infra & DevOps",
+			"skills": [
+				{
+					"name": "Linux",
+					"logo": "resources/svgs/skills/Linux.svg",
+					"link": "https://kernel.org/"
 				},
 				{
 					"name": "Docker",
 					"logo": "resources/svgs/skills/Docker.svg",
 					"link": "https://www.docker.com/"
+				},
+				{
+					"name": "Kubernetes",
+					"logo": "resources/svgs/skills/Kubernetes.svg",
+					"link": "https://kubernetes.io/"
+				},
+				{
+					"name": "Caddy",
+					"logo": "resources/svgs/skills/Caddy.svg",
+					"link": "https://caddyserver.com/"
+				},
+				{
+					"name": "Prometheus",
+					"logo": "resources/svgs/skills/Prometheus.svg",
+					"link": "https://prometheus.io/"
+				},
+				{
+					"name": "Grafana",
+					"logo": "resources/svgs/skills/Grafana.svg",
+					"link": "https://grafana.com/"
+				}
+			]
+		},
+		{
+			"name": "Data",
+			"skills": [
+				{
+					"name": "PostgreSQL",
+					"logo": "resources/svgs/skills/PostgreSQL.svg",
+					"link": "https://www.postgresql.org/"
+				},
+				{
+					"name": "Redis",
+					"logo": "resources/svgs/skills/Redis.svg",
+					"link": "https://redis.io/"
+				},
+				{
+					"name": "SQLite",
+					"logo": "resources/svgs/skills/SQLite.svg",
+					"link": "https://sqlite.org/"
+				}
+			]
+		},
+		{
+			"name": "Daily drivers",
+			"skills": [
+				{
+					"name": "Neovim",
+					"logo": "resources/svgs/skills/Neovim.svg",
+					"link": "https://neovim.io/"
+				},
+				{
+					"name": "tmux",
+					"logo": "resources/svgs/skills/Tmux.svg",
+					"link": "https://github.com/tmux/tmux"
+				},
+				{
+					"name": "Git",
+					"logo": "resources/svgs/skills/Git.svg",
+					"link": "https://git-scm.com/"
 				},
 				{
 					"name": "Make",
 					"logo": "resources/svgs/skills/GNU_Make.svg",
 					"link": "https://www.gnu.org/software/make/"
-				}
-			]
-		},
-		{
-			"name" : "Computer Graphics",
-			"skills" :
-			[
-				{
-					"name": "OpenGL",
-					"logo": "resources/svgs/skills/OpenGL.svg",
-					"link": "https://www.opengl.org//"
-				},
-				{
-					"name": "GLSL",
-					"logo": "resources/images/skills/Glsl.webp",
-					"link": "https://en.wikipedia.org/wiki/OpenGL_Shading_Language"
-				},
-				{
-					"name": "GLM",
-					"logo": "resources/svgs/skills/Glm.svg",
-					"link": "https://glm.g-truc.net/0.9.9/"
-				}
-			]
-		},
-		{
-			"name" : "Back-end Web",
-			"skills" :
-			[
-				{
-					"name": "Python",
-					"logo": "resources/svgs/skills/Python.svg",
-					"link": "https://www.python.org/"
-				},
-				{
-					"name": "JavaScript",
-					"logo": "resources/svgs/skills/JavaScript.svg",
-					"link": "https://en.wikipedia.org/wiki/JavaScript"
-				},
-				{
-					"name": "Django",
-					"logo": "resources/noa/Django.svg",
-					"link": "https://www.djangoproject.com/"
-				},
-				{
-					"name": "NodeJS",
-					"logo": "resources/svgs/skills/NodeJS.svg",
-					"link": "https://nodejs.org/en/"
-				},
-				{
-					"name": "SQL",
-					"logo": "resources/svgs/skills/Sql.svg",
-					"link": "https://sql.sh"
-				},
-				{
-					"name": "MongoDB",
-					"logo": "resources/svgs/skills/MongoDB.svg",
-					"link": "https://www.mongodb.com"
-				},
-				{
-					"name": "Git",
-					"logo": "resources/svgs/skills/Git.svg",
-					"link": "https://git-scm.com/"
-				},
-				{
-					"name": "Docker",
-					"logo": "resources/svgs/skills/Docker.svg",
-					"link": "https://www.docker.com/"
-				}
-			]
-		},
-		{
-			"name" : "Front-end Web",
-			"skills" :
-			[
-				{
-					"name": "HTML",
-					"logo": "resources/svgs/skills/Html.svg",
-					"link": "https://en.wikipedia.org/wiki/HTML"
-				},
-				{
-					"name": "CSS",
-					"logo": "resources/svgs/skills/Css.svg",
-					"link": "https://en.wikipedia.org/wiki/CSS"
-				},
-				{
-					"name": "JavaScript",
-					"logo": "resources/svgs/skills/JavaScript.svg",
-					"link": "https://en.wikipedia.org/wiki/JavaScript"
-				},
-				{
-					"name": "Bootstrap",
-					"logo": "resources/svgs/skills/Bootstrap.svg",
-					"link": "https://getbootstrap.com/"
-				},
-				{
-					"name": "ThreeJS",
-					"logo": "resources/svgs/skills/ThreeJS.svg",
-					"link": "https://threejs.org"
-				},
-				{
-					"name": "Git",
-					"logo": "resources/svgs/skills/Git.svg",
-					"link": "https://git-scm.com/"
-				}
-			]
-		},
-		{
-			"name" : "Design",
-			"skills" :
-			[
-				{
-					"name": "Photoshop",
-					"logo": "resources/svgs/skills/Photoshop.svg",
-					"link": "https://www.adobe.com/products/photoshop.html"
-				},
-				{
-					"name": "Figma",
-					"logo": "resources/svgs/skills/Figma.svg",
-					"link": "https://www.figma.com/"
-				},
-				{
-					"name": "Blender",
-					"logo": "resources/noa/Blender.png",
-					"link": "https://www.blender.org/"
 				}
 			]
 		}

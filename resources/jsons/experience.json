@@ -1,20 +1,90 @@
 {
-	"experience":
-	[
+	"experience": [
 		{
-			"date": 2022,
-			"type": "Student Developer",
-			"title": "42Paris",
-			"description": "42 is a future-proof computer science training to educate the next generation of software engineers. The 42 program takes a project-based approach to progress and is designed to develop technical and people skills that match the expectations of the labor market.",
-			"tags":
-			[
-				{ "name": "C", "url": "https://en.wikipedia.org/wiki/C_(programming_language)" },
-				{ "name": "C++", "url": "https://isocpp.org/" },
-				{ "name": "Python", "url": "https://www.python.org/" }
+			"start": "2025-09",
+			"end": "2026-03",
+			"location": "42 internship",
+			"type": "Software Engineer Intern — Cybersecurity",
+			"title": "Thales",
+			"link": "https://www.thalesgroup.com/",
+			"description": "Six-month internship, part of the 42 curriculum, in a cybersecurity team — building the tooling that keeps security work fast and reproducible.",
+			"points": [
+				[
+					"Automation —",
+					"Python/Bash tools automating security workflows, cutting analysts' manual load and speeding up deployment cycles."
+				],
+				[
+					"Vulnerability management —",
+					"full-stack Java + Vue.js platform aggregating security audits in one place."
+				],
+				[
+					"Infrastructure as code —",
+					"Docker/Kubernetes environments with full parity across Linux, Windows and macOS workstations."
+				],
+				[
+					"Data —",
+					"PostgreSQL query optimization on large security datasets, drastically speeding up report generation."
+				],
+				[
+					"Supply chain —",
+					"Artifactory repositories (NPM/Apt/Maven) and protocols to block supply-chain attacks."
+				]
 			],
+			"tags": [
+				{
+					"name": "Python",
+					"url": "https://www.python.org/"
+				},
+				{
+					"name": "Bash",
+					"url": "https://www.gnu.org/software/bash/"
+				},
+				{
+					"name": "Java",
+					"url": "https://www.java.com/"
+				},
+				{
+					"name": "Vue.js",
+					"url": "https://vuejs.org/"
+				},
+				{
+					"name": "Kubernetes",
+					"url": "https://kubernetes.io/"
+				},
+				{
+					"name": "PostgreSQL",
+					"url": "https://www.postgresql.org/"
+				},
+				{
+					"name": "Artifactory",
+					"url": "https://jfrog.com/artifactory/"
+				}
+			],
+			"video": ""
+		},
+		{
+			"start": "2022",
+			"end": null,
+			"location": "Paris",
+			"type": "Software Engineering — RNCP Level 7",
+			"title": "42 Paris",
 			"link": "https://42.fr/en/homepage/",
-			"video": "resources/noa/42_intro.mp4",
-			"image": "resources/noa/42_logo.jpg"
+			"description": "Project-based computer science curriculum leading to an RNCP level 7 (master's equivalent) — low-level memory management, C/C++ architecture and network security, built from scratch without the standard library and held to a zero-leak policy with Valgrind and GDB.",
+			"tags": [
+				{
+					"name": "C",
+					"url": "https://en.wikipedia.org/wiki/C_(programming_language)"
+				},
+				{
+					"name": "C++",
+					"url": "https://isocpp.org/"
+				},
+				{
+					"name": "Python",
+					"url": "https://www.python.org/"
+				}
+			],
+			"video": "resources/noa/42_intro.mp4"
 		}
 	]
 }
