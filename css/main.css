@@ -556,7 +556,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .points li::before { content: "▸"; position: absolute; left: 0; color: var(--red); }
 .points b { color: var(--ink); font-weight: 600; }
 .exp .screen { aspect-ratio: 16 / 9; align-self: start; }
-.exp:hover .screen video { filter: none; }
+.exp:hover .screen video, .exp:hover .screen img { filter: none; }
 .exp:hover .screen::before { opacity: 0; }
 
 /* ---------- CONTACT ---------- */

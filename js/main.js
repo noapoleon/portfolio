@@ -371,7 +371,11 @@ async function experience()
 				${x.points ? `<ul class="points">${x.points.map(pt => `<li><b>${esc(pt[0])}</b> ${esc(pt[1])}</li>`).join('')}</ul>` : ''}
 				<div class="tags">${x.tags.map(t => `<a href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.name)}</a>`).join('')}</div>
 			</div>
-			${x.video ? screen(x.video, 'INTRO.MP4') : placeholder(x.title, x.type.toUpperCase())}
+			${x.video
+				? screen(x.video, 'INTRO.MP4')
+				: x.image
+					? still(x.image, x.image.split('/').pop().toUpperCase(), x.title)
+					: placeholder(x.title, x.type.toUpperCase())}
 		</article>`).join('');
 	reveal(list);
 	watchVideos(list);

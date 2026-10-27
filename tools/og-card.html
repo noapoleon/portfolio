@@ -9,17 +9,17 @@
 	html, body { width: 1200px; height: 630px; overflow: hidden; margin: 0; }
 	.card { position: relative; width: 1200px; height: 630px; overflow: hidden; background: var(--bg); }
 	#f { position: absolute; inset: 0; width: 100%; height: 100%; image-rendering: pixelated; }
-	.card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, var(--bg) 0%, rgba(10,10,11,.6) 48%, transparent 78%); }
+	.card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, var(--bg) 0%, rgba(6,6,7,.6) 48%, transparent 78%); }
 	.in { position: absolute; inset: 0; z-index: 2; padding: 56px 64px; display: flex; flex-direction: column; justify-content: space-between; }
 	.top, .bot { display: flex; justify-content: space-between; align-items: center; font-family: var(--mono); font-size: 18px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-dim); }
 	.top b { color: var(--red); font-weight: 500; }
-	.top span:last-child, .bot span:last-child { background: rgba(10,10,11,.85); border: 1px solid var(--line); padding: 8px 14px; color: var(--ink); }
+	.top span:last-child, .bot span:last-child { background: rgba(6,6,7,.85); border: 1px solid var(--line); padding: 8px 14px; color: var(--ink); }
 	h1 { margin: 0; font-weight: 900; font-variation-settings: "wdth" 125; font-size: 150px; line-height: .84; letter-spacing: -.045em; text-transform: uppercase; color: var(--ink); }
 	h1 span { display: block; padding-left: 60px; color: transparent; -webkit-text-stroke: 2px var(--ink); }
 	h1 i { display: inline-block; width: 18px; height: 104px; background: var(--red); margin-left: 10px; }
 	.role { white-space: nowrap; font-family: var(--sans); font-size: 28px; font-variation-settings: "wdth" 100; font-weight: 600; color: var(--ink); text-transform: none; letter-spacing: -.01em; }
 	.role em { color: var(--red); font-style: normal; }
-	.grain { position: absolute; inset: 0; animation: none; opacity: .1; z-index: 3; }
+	.grain { position: absolute; inset: 0; opacity: .045; z-index: 3; }
 	.frame { position: absolute; inset: 18px; z-index: 4; }
 </style>
 </head>
